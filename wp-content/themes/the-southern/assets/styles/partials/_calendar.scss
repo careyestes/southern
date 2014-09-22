@@ -1,0 +1,15 @@
+.calendarModule {
+	width:70%;
+	margin: 2.5em auto; 
+	.calendarIcon {
+		width: 50px;
+		height: 65px;
+		margin: 0 auto;
+		background: $sprite;
+		background-position: 0 -58px;
+	}
+	h2 {
+		text-transform: uppercase;
+		text-align: center;
+	}
+}

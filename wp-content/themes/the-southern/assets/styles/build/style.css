@@ -25,6 +25,10 @@ Text Domain: the-southern
   font-family: GothamLight;
   src: url(assets/fonts/Gotham-Light.otf);
 }
+@font-face {
+  font-family: GothamMedium;
+  src: url(assets/fonts/Gotham-Medium.otf);
+}
 /* normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -553,6 +557,8 @@ img {
    Typography
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
+  font-family: "GothamMedium", Helvetica, sans-serif;
+  color: #284457;
   clear: both;
 }
 
@@ -1029,8 +1035,13 @@ body.home #content {
 }
 body.home .entry-content {
   margin: 0;
-  padding: 0 11em 5em;
+  padding: 0 0 5em;
   line-height: 1.5em;
+}
+body.home .entry-content p {
+  width: 70%;
+  margin: 0 auto 1.5em;
+  padding: 0;
 }
 
 /* ==========================================================================
@@ -1196,4 +1207,20 @@ body.home .entry-content {
 
 .nivo-nextNav {
   background-position: -30px 0;
+}
+
+.calendarModule {
+  width: 70%;
+  margin: 2.5em auto;
+}
+.calendarModule .calendarIcon {
+  width: 50px;
+  height: 65px;
+  margin: 0 auto;
+  background: url(assets/images/icons.sprite-02.svg) no-repeat;
+  background-position: 0 -58px;
+}
+.calendarModule h2 {
+  text-transform: uppercase;
+  text-align: center;
 }
