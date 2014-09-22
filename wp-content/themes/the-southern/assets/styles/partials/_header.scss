@@ -1,0 +1,50 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.site-header {
+	position: relative;
+	z-index: 10;
+	width: 310px;
+	margin: 0 auto;
+	padding: 0;
+	
+	.header-navigation-container {
+		width: 300px;
+		margin: 0 auto;
+		padding: 1em 0 0;
+		background: #fff url(assets/images/header.background.gif);
+		box-shadow: 0 0 8px #444;
+	}
+}
+.home .site-header {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.site-description {
+	width: 0;
+	height: 0;
+	margin: 0;
+	@include hidetext;
+}
+
+.site-title {
+	width: 97%;
+	margin: 0 auto;
+	a {
+		display: block;
+		width: 90%;
+		height: 85px;
+		margin: 0 auto;
+		background: url(assets/images/header.logo.svg) no-repeat;
+		@include hidetext;
+	}
+}
+.site-navigation-bottom-ornament {
+	clear: both;
+	width: 310px;
+	height: 44px;
+	background: url(assets/images/header.bottom.ornament.png) no-repeat;
+}

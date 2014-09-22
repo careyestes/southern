@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+// Font Face
+@font-face {
+    font-family: GothamLight;
+    src: url(assets/fonts/Gotham-Light.otf);
+}
+
+// Structure
+$pageWidth: 960px;
+
+// Text Selection
+$selectionColor: orange;
+
+// Colors
+$red: red;
+$blue: rgb(40, 68, 87);
+$highlight: rgb(69, 111, 147);
+$lightGrey: #ddd;
+
+// Fonts
+$georgia: "Georgia", serif;
+$gothamLight: 'GothamLight', Helvetica, sans-serif;
+
+// Sprite
+$sprite: url(assets/images/icons.sprite-02.svg) no-repeat;
