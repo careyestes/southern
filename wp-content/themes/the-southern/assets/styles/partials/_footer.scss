@@ -3,4 +3,16 @@
    ========================================================================== */
 
 .site-footer {
+	color: #fff;
+	text-align: center;
+	font-family: $gothamLight;
+	.site-address {
+		background: url(assets/images/footer.background.gif);
+		padding: 1.5em 0;
+	}
+	.colophon {
+		padding: 1em 0 0.8em;
+		background: #000;
+		font-size: 0.7em;
+	}
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: The Southern
 Author: Carey Estes
@@ -557,7 +558,7 @@ img {
    Typography
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "GothamMedium", Helvetica, sans-serif;
+  font-family: "GothamLight", Helvetica, sans-serif;
   color: #284457;
   clear: both;
 }
@@ -572,6 +573,10 @@ blockquote {
 
 address {
   margin: 0 0 1.5em;
+}
+
+small {
+  font-size: 0.7em;
 }
 
 /* ==========================================================================
@@ -593,6 +598,30 @@ address {
   clear: both;
   display: block;
   margin: 0 auto;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+.blueButton {
+  padding: 0.5em 1em;
+  margin: 0;
+  background: #284457;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.blueButton:hover {
+  background: #dddddd;
+}
+.blueButton a, .blueButton a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.blueButton a:hover, .blueButton a:visited:hover {
+  color: #456f93;
 }
 
 /* ==========================================================================
@@ -747,10 +776,27 @@ address {
 /* ==========================================================================
    Layout
    ========================================================================== */
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+#content {
+  margin-top: 1.5em;
+  padding: 0.1em 8em 1.5em;
+}
+
 #page {
   width: 95%;
   max-width: 960px;
   margin: 0 auto;
+  box-shadow: 0 0 10px #838383;
+}
+
+.site-content {
+  margin-top: 0;
+  background: #fff;
+  border-top: 3px solid #456f93;
 }
 
 .content-area {
@@ -774,6 +820,21 @@ address {
   width: 100%;
 }
 
+.featuredImage {
+  position: absolute;
+  top: -276px;
+  width: 100%;
+  max-height: 276px;
+  overflow: hidden;
+}
+.featuredImage img {
+  width: 100%;
+}
+
+.entry-meta {
+  font-size: 0.7em;
+}
+
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -781,7 +842,7 @@ address {
   position: relative;
   z-index: 10;
   width: 310px;
-  margin: 0 auto;
+  margin: 0 auto 2em;
   padding: 0;
 }
 .site-header .header-navigation-container {
@@ -832,6 +893,21 @@ address {
 /* ==========================================================================
    Footer
    ========================================================================== */
+.site-footer {
+  color: #fff;
+  text-align: center;
+  font-family: "GothamLight", Helvetica, sans-serif;
+}
+.site-footer .site-address {
+  background: url(assets/images/footer.background.gif);
+  padding: 1.5em 0;
+}
+.site-footer .colophon {
+  padding: 1em 0 0.8em;
+  background: #000;
+  font-size: 0.7em;
+}
+
 /* ==========================================================================
    Menus
    ========================================================================== */
@@ -886,6 +962,19 @@ address {
 
 .main-navigation ul li:hover > ul {
   display: block;
+}
+
+.main-navigation .current_page_item a,
+.main-navigation .current-menu-item a {
+  color: #456f93;
+}
+.main-navigation .current_page_item a:before,
+.main-navigation .current-menu-item a:before {
+  content: "• ";
+}
+.main-navigation .current_page_item a:after,
+.main-navigation .current-menu-item a:after {
+  content: " •";
 }
 
 /* Small menu */
@@ -951,7 +1040,7 @@ address {
 }
 
 .hentry {
-  margin: 0 0 1.5em;
+  margin: 0 0 0;
 }
 
 .byline,
@@ -969,6 +1058,12 @@ address {
 .entry-summary {
   background: #fff;
   margin: 1.5em 0 0;
+}
+.page-content img,
+.entry-content img,
+.entry-summary img {
+  padding: 0.5em;
+  border: 1px dotted #dddddd;
 }
 
 .page-links {
@@ -1030,11 +1125,16 @@ object {
 /* ==========================================================================
    Home Page Template
    ========================================================================== */
+body.home .site-content {
+  margin-top: 0;
+}
 body.home #content {
+  margin-top: 0;
+  padding: 0;
   background: #fff;
 }
 body.home .entry-content {
-  margin: 0;
+  margin: -30px 0 0;
   padding: 0 0 5em;
   line-height: 1.5em;
 }
@@ -1211,7 +1311,7 @@ body.home .entry-content p {
 
 .calendarModule {
   width: 70%;
-  margin: 2.5em auto;
+  margin: 2.5em auto 0;
 }
 .calendarModule .calendarIcon {
   width: 50px;

@@ -25,7 +25,7 @@
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0 0 0;
 }
 
 .byline,
@@ -43,6 +43,10 @@
 .entry-summary {
 	background: #fff;
 	margin: 1.5em 0 0;
+	img {
+		padding: 0.5em;
+		border: 1px dotted $lightGrey;
+	}
 }
 
 .page-links {

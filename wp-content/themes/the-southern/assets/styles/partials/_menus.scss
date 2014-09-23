@@ -71,6 +71,13 @@
 
 .main-navigation .current_page_item a,
 .main-navigation .current-menu-item a {
+	color: $highlight;
+	&:before {
+		content: "• ";
+	}
+	&:after {
+		content: " •";
+	}
 }
 
 /* Small menu */

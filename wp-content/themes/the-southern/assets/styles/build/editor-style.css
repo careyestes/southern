@@ -1,3 +1,44 @@
 /* ==========================================================================
    Editor Styles
    ========================================================================== */
+img {
+  padding: 0.5em;
+  border: 1px dotted #dddddd;
+}
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+
+.size-full {
+  width: 95%;
+}
+
+.blueButton {
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  background: #284457;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.blueButton a {
+  color: #fff;
+  text-decoration: none;
+}

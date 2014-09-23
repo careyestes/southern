@@ -10,10 +10,13 @@
  */
 ?>
 	</div><!-- #main .wrapper -->
-	<footer id="colophon" role="contentinfo">
-		<div class="site-info">
-			Proudly built by your mom.
-		</div><!-- .site-info -->
+	<footer class="site-footer" role="contentinfo">
+		<section class="site-address">
+			<?php echo get_option( 'ut-site-info-address'); ?>
+		</section><!-- .site-info -->
+		<section class="colophon">
+			&copy; <?php echo date('Y'); ?> Designed + Developed: Carey Estes
+		</section>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

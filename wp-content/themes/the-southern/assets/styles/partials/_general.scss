@@ -56,7 +56,7 @@ h3 { }
 h4 { }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: $gothamMedium;
+	font-family: $gothamLight;
 	color: $blue;
 	clear: both;
 }
@@ -71,6 +71,10 @@ blockquote {
 
 address {
 	margin: 0 0 1.5em;
+}
+
+small {
+	font-size: 0.7em;
 }
 
 
@@ -92,6 +96,30 @@ address {
 	clear: both;
 	display: block;
 	margin: 0 auto;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+.blueButton {
+	padding: 0.5em 1em;
+	margin:0;
+	background: $blue;
+	border: 0;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 1em;
+	text-transform: uppercase;
+	&:hover {
+		background: $lightGrey;
+	}
+	a, a:visited {
+		color: #fff;
+		text-decoration: none;
+		&:hover {
+			color: $highlight;
+		}
+	}
 }
 
 /* ==========================================================================
