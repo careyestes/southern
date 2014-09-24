@@ -4,19 +4,21 @@
 .wrapper {
 	position: relative;
 	width: 100%;
+	box-shadow: 0 0 10px #838383;
 }
 
 #content {
 	margin-top: 1.5em;
 	padding: 0.1em 8em 1.5em;
+	@include bp(phone) {
+		padding: 0 1em 1.5em;
+	}
 }
 
 #page {
-	// background: #fff;
 	width: 95%;
 	max-width: $pageWidth;
 	margin: 0 auto;
-	box-shadow: 0 0 10px #838383;
 }
 
 .site-content {
@@ -52,9 +54,15 @@
 	width: 100%;
 	max-height: 276px;
 	overflow: hidden;
+	box-shadow: 0 0 10px #838383;
 	img {
 		width:100%;
 	}
+	@include bp(phone) {
+		position:relative;
+		top: 0;
+	}
+
 }
 .entry-meta {
 	font-size: 0.7em;

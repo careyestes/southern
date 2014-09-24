@@ -110,6 +110,7 @@ small {
 	border-radius: 5px;
 	font-size: 1em;
 	text-transform: uppercase;
+	outline: 0;
 	&:hover {
 		background: $lightGrey;
 	}

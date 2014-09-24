@@ -7,7 +7,7 @@
  * @include bp(tablet) { SCSS here };
 */
 @mixin bp($point) {
-	@if $point == biggie {
+	@if $point == big {
 		@media (max-width : 1600px) { @content; }
 	}
 	@if $point == tablet {

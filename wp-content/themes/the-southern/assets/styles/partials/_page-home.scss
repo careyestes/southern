@@ -3,6 +3,11 @@
    ========================================================================== */
 
 body.home {
+	.site-header {
+		@include bp(phone) {
+			position: relative;
+		}
+	}
 	.site-content {
 		margin-top: 0;
 	}

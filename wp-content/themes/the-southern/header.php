@@ -35,7 +35,6 @@
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<h3 class="menu-toggle"><?php _e( 'Menu', 'ce_template' ); ?></h3>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu' => 'Main Menu', 'menu_class' => 'nav-menu', 'fallback_cb' => false ) ); ?>
 			</nav><!-- #site-navigation -->
 			<div class="clear"></div>
