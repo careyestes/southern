@@ -902,6 +902,12 @@ small {
   height: 44px;
   background: url(assets/images/header.bottom.ornament.png) no-repeat;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .site-navigation-bottom-ornament {
+    background: url(assets/images/header.bottom.ornament@2x.png) no-repeat;
+    background-size: 310px 44px;
+  }
+}
 
 /* ==========================================================================
    Footer
@@ -918,7 +924,13 @@ small {
 .site-footer .colophon {
   padding: 1em 0 0.8em;
   background: #000;
-  font-size: 0.7em;
+  font-size: 0.6em;
+}
+.site-footer .colophon a {
+  color: #fff;
+}
+.site-footer .colophon a:hover {
+  text-decoration: none;
 }
 
 /* ==========================================================================
@@ -1012,6 +1024,11 @@ small {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 4px;
+}
+@media (max-width: 768px) {
+  .entry-title-container .entry-title {
+    background-position: -63px 0;
+  }
 }
 
 .hentry {
@@ -1283,6 +1300,11 @@ body.home .entry-content p {
 
 .nivo-prevNav {
   background-position: 0 0;
+}
+@media (max-width: 768px) {
+  .nivo-prevNav {
+    left: -1px;
+  }
 }
 
 .nivo-nextNav {

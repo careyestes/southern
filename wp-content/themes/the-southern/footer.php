@@ -15,7 +15,7 @@
 			<?php echo get_option( 'ut-site-info-address'); ?>
 		</section><!-- .site-info -->
 		<section class="colophon">
-			&copy; <?php echo date('Y'); ?> Designed + Developed: Carey Estes
+			&copy; <?php echo date('Y'); ?> Designed + Developed: <a target="_blank" href="http://www.careyestes.com">Carey Estes</a>
 		</section>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

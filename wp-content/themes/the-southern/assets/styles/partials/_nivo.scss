@@ -7,6 +7,9 @@
 }
 .nivo-prevNav {
 	background-position: 0 0;
+	@include bp(phone) {
+		left: -1px;
+	}
 }
 .nivo-nextNav {
 	background-position: -30px 0;

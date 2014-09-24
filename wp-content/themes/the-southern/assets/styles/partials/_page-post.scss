@@ -13,6 +13,9 @@
 		padding: 0.6em 1em 0;
 		background: $sprite;
 		background-position: -62px 0;
+		@include bp(phone) {
+			background-position: -63px 0;
+		}
 		color: $blue;
 		font-size: 2em;
 		font-family: $gothamLight;
