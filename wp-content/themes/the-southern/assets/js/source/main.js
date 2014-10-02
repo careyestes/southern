@@ -14,4 +14,8 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.tribe-events-read-more').attr('href', '#');
+
+	// Copy cal month links to below header
+	var subnav = $('.tribe-events-sub-nav').html();
+	$('.tribe-events-page-title').after('<ul class="tribe-events-sub-nav">'+subnav+'</ul>');
 });
