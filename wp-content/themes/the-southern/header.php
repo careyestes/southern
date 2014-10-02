@@ -19,6 +19,10 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,200' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/x-icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
+<link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.png" />
+<link rel="icon" type="image/gif" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.gif" />
+<meta name="description" content="ur unique, social venue in the heart of beautiful, downtown Columbus, MS provides you with all the linens, table wares, and an on-site caterer, making planning a breeze. ">
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
